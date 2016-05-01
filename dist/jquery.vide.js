@@ -42,7 +42,8 @@
     posterType: 'detect',
     resizing: true,
     bgColor: 'transparent',
-    className: ''
+    className: '',
+    elementPosition: 'absolute'
   };
 
   /**
@@ -244,7 +245,7 @@
     $wrapper = vide.$wrapper = $('<div>')
       .addClass(settings.className)
       .css({
-        position: 'absolute',
+        position: settings.elementPosition,
         'z-index': -1,
         top: 0,
         left: 0,
